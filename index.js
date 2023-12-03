@@ -4,6 +4,8 @@ const port = process.env.PORT || 3000;
 
 const app = express();
 
+app.use(express.json())
+
 //for practice this is stored in memory, usually we are to get this from database
 
 const courses = [
@@ -16,8 +18,21 @@ app.get("/", (req, res) => {
   res.send("Hello, node installed ");
 });
 
+//get all courses
 app.get("/api/courses", (req, res) => {
   res.send(courses);
+});
+
+// posting to collection of courses thus, we are using plural
+app.post("/api/courses", (req, res) => {
+  //this is a hardcoded course object in memory
+  const course = {
+    id: courses.length + 1,
+    name: req.body.name, //here we are assuming that there will be a property called name in the request body. This will be passed during the post request
+  };
+
+  courses.push(course)
+  res.send(course)
 });
 
 //route paramaters vs query param
