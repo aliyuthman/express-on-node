@@ -1,28 +1,21 @@
 const express = require("express");
 const Joi = require("joi");
 const log = require("./logger");
+const auth = require("./auth");
 
 const port = process.env.PORT || 3000;
 
 const app = express();
 
-app.use(express.json());
+// buit-in middleware
+app.use(express.json()); //parsing json
+app.use(express.urlencoded({extended: true})) //parsing url key-value params
+app.use(express.static('public')) //parsing static files to serve static files from the root of the app
 
 
+// custom middleware
 app.use(log)
-
-
-app.use((req, res, next)=>{
-
-
-  // this middleware function delegated for logging logic
-  console.log("Authenticating")
-
-  // next(); - with this we are passing control to the next middleware function in the pipeline
-
-  next();
-
-})
+app.use(auth)
 
 
 //for practice this is stored in memory, usually we are to get this from database
