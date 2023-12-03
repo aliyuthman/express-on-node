@@ -3,20 +3,28 @@ const Joi = require("joi");
 const log = require("./logger");
 const auth = require("./auth");
 
+const helmet = require("helmet")
+const morgan = require('morgan')
+
+
 const port = process.env.PORT || 3000;
 
 const app = express();
 
 // buit-in middleware
 app.use(express.json()); //parsing json
-app.use(express.urlencoded({extended: true})) //parsing url key-value params
-app.use(express.static('public')) //parsing static files to serve static files from the root of the app
+app.use(express.urlencoded({ extended: true })); //parsing url key-value params
+app.use(express.static("public")); //parsing static files to serve static files from the root of the app
+
+
+// third-party middleware
+app.use(helmet());
+app.use(morgan('tiny')) //log request to the console or configure log to a log file
 
 
 // custom middleware
-app.use(log)
-app.use(auth)
-
+app.use(log);
+app.use(auth);
 
 //for practice this is stored in memory, usually we are to get this from database
 
