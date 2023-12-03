@@ -1,11 +1,29 @@
 const express = require("express");
 const Joi = require("joi");
+const log = require("./logger");
 
 const port = process.env.PORT || 3000;
 
 const app = express();
 
 app.use(express.json());
+
+
+app.use(log)
+
+
+app.use((req, res, next)=>{
+
+
+  // this middleware function delegated for logging logic
+  console.log("Authenticating")
+
+  // next(); - with this we are passing control to the next middleware function in the pipeline
+
+  next();
+
+})
+
 
 //for practice this is stored in memory, usually we are to get this from database
 

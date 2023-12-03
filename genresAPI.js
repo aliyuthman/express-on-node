@@ -36,6 +36,9 @@ const app = express();
 
 app.use(express.json());
 
+
+
+
 const Joi = require("joi");
 
 // get all genres
