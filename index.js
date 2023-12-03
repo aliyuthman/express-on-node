@@ -3,24 +3,30 @@ const Joi = require("joi");
 const log = require("./logger");
 const auth = require("./auth");
 
-const helmet = require("helmet")
-const morgan = require('morgan')
-
+const helmet = require("helmet");
+const morgan = require("morgan");
+const app = express();
 
 const port = process.env.PORT || 3000;
 
-const app = express();
+// Environment variable
+
+console.log("NODE_ENV: " + process.env.NODE_ENV); //undefined - by default when not set it is undefined which make app.get('env') to return developement
+
+console.log("app: " + app.get("env"));
 
 // buit-in middleware
 app.use(express.json()); //parsing json
 app.use(express.urlencoded({ extended: true })); //parsing url key-value params
 app.use(express.static("public")); //parsing static files to serve static files from the root of the app
 
-
 // third-party middleware
 app.use(helmet());
-app.use(morgan('tiny')) //log request to the console or configure log to a log file
 
+if (app.get("env") === "development") {
+  app.use(morgan("tiny")); //log request to the console or configure log to a log file
+  console.log('Morgan enabled...')
+}
 
 // custom middleware
 app.use(log);
