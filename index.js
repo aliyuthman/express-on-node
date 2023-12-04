@@ -1,3 +1,4 @@
+const config = require('config')
 const express = require("express");
 const Joi = require("joi");
 const log = require("./logger");
@@ -22,6 +23,11 @@ app.use(express.static("public")); //parsing static files to serve static files 
 
 // third-party middleware
 app.use(helmet());
+
+// Configuration
+console.log('Application Name: '+ config.get('name'))
+console.log('Mail Server: '+ config.get('mail.host'))
+console.log('Mail Password: '+ config.get('mail.password'))
 
 if (app.get("env") === "development") {
   app.use(morgan("tiny")); //log request to the console or configure log to a log file
