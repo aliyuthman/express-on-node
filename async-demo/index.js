@@ -18,34 +18,49 @@ console.log("After")
 A non-blocking or asynchronous program
 
 */
+// handling async code with callback
 
-console.log("Before");
 
-console.log("After");
-
-const getUser = (id) => {
+//async function 1 - with setTimeout()
+const getUser = (id, callback) => {
   setTimeout(() => {
     console.log("Reading database...");
 
-    return {
-      id: id,
-      gitHubUsername: "Aliyu",
-    };
+    callback({ id: id, gitHubUsername: "Aliyu" });
+
+    return;
   }, 2000); //simulating reading from database after 2 secs
 };
 
+//async function 2 - with setTimeout()
+function getRepositories(username, callback){
+    setTimeout(()=>{
+        console.log("Calling Github API ...")
+        callback(['repo1','repo2', 'repo3'])
+    }, 2000)
+}
 
-const user = getUser(1); //the return within the setTime out will be delayed, so since the function getUser has no of it own, the results of the console will always undefined as the setTimeout will be delay for 2sec and getUser is instant.
-console.log(user)
+console.log("Before");
+getUser(1, function (user) {
+//   console.log("User", user);
+
+  //Get the repositories
+  getRepositories(user.gitHubUsername, (repos)=>{
+
+    console.log('Repos', repos)
+
+  })
+});
+
+console.log("After");
+// const user = getUser(1); //the return within the setTime out will be delayed, so since the function getUser has no of it own, the results of the console will always undefined as the setTimeout will be delay for 2sec and getUser is instant.
+// console.log(user);
 
 /*
 
 Note: setTimeout() function was used to simulate reading from 
 database. It is normal that reading from database usually delayed, thus, the use setTimeout() to schedule execution of a program.
 */
-
-
-
 
 //Handling Async code in Node
 
