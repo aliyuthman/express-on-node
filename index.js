@@ -1,3 +1,6 @@
+const startupDebugger = require('debug')('app:startup')
+const dbDebugger = require('debug')('app:db')
+
 const config = require('config')
 const express = require("express");
 const Joi = require("joi");
@@ -31,8 +34,19 @@ console.log('Mail Password: '+ config.get('mail.password'))
 
 if (app.get("env") === "development") {
   app.use(morgan("tiny")); //log request to the console or configure log to a log file
-  console.log('Morgan enabled...')
-}
+  // console.log('Morgan enabled...')
+  startupDebugger("Morgan enabled")
+} 
+
+if (app.get("env") === "production") {
+  app.use(morgan("tiny")); //log request to the console or configure log to a log file
+  // console.log('Morgan enabled...')
+  startupDebugger("Morgan disabled")
+} 
+
+
+// DB Work
+dbDebugger("Connected to the database....")
 
 // custom middleware
 app.use(log);
