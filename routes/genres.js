@@ -1,4 +1,8 @@
 const express = require("express");
+const router = express.Router()
+
+// const Joi = require("joi");
+
 
 const genres = [
   {
@@ -31,23 +35,15 @@ const genres = [
       "Imaginary worlds, magical elements, and fantastical creatures.",
   },
 ];
-const port = process.env.PORT || 3000;
-const app = express();
 
-app.use(express.json());
-
-
-
-
-const Joi = require("joi");
 
 // get all genres
-app.get("/api/genres", (req, res) => {
+router.get("/", (req, res) => {
   res.send(genres);
 });
 
 // Get single genres
-app.get("/api/genres/:id", (req, res) => {
+router.get("/:id", (req, res) => {
   const params = parseInt(req.params.id);
 
   const genre = genres.find((genreObj) => genreObj.id === params);
@@ -57,16 +53,17 @@ app.get("/api/genres/:id", (req, res) => {
 });
 
 //post genres
-app.post("/api/genres", () => {});
+router.post("/", () => {});
 
 //post single genre
-app.post("/api/genres/:id", () => {});
+router.post("/:id", () => {});
 
 //update a course
-app.put("/api/genres/:id", () => {});
+router.put("/:id", () => {});
 
 //delete a course
-app.delete("/api/genres/:id", () => {});
-app.listen(port, () => {
-  console.log("Server running on " + port);
-});
+router.delete("/:id", () => {});
+
+
+
+module.exports = router
