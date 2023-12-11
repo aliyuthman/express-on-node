@@ -28,8 +28,13 @@ const createCourse = async () => {
   console.log(result);
 };
 const getCourses = async () => {
+  const pageNumber = 2;
+  const pageSize = 10;
+  //usually these are to come from url query like /api/courses?pageNumber=2&pageSize=1
+  //to do pagination we use skip() method
   const courses = await Course.find({ author: /^Aliyu/ })
-    .limit(10)
+    .skip((pageNumber - 1) * pageSize)
+    .limit(pageSize)
     .sort({ name: 1 })
     .count();
 
