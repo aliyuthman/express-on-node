@@ -1,0 +1,127 @@
+[
+  {
+    "name": "Web Development Fundamentals",
+    "author": "Aliyu Usman",
+    "tags": ["HTML", "CSS", "JavaScript", "Web Development"],
+    "isPublished": true
+  },
+  {
+    "name": "User Experience Mastery",
+    "author": "Fatima Muhammad",
+    "tags": ["UX", "Usability", "User Research", "Design"],
+    "isPublished": true
+  },
+  {
+    "name": "Mobile App Design Workshop",
+    "author": "Raisal Aliyu",
+    "tags": ["UI", "Mobile Design", "Prototyping", "App Development"],
+    "isPublished": true
+  },
+  {
+    "name": "Responsive Web Design",
+    "author": "Aliyu Usman",
+    "tags": ["HTML", "CSS", "Responsive Design", "Web Development"],
+    "isPublished": true
+  },
+  {
+    "name": "Visual Design Principles",
+    "author": "Fatima Muhammad",
+    "tags": ["Visual Design", "Color Theory", "Typography", "Design"],
+    "isPublished": true
+  },
+  {
+    "name": "Interactive Prototyping Techniques",
+    "author": "Raisal Aliyu",
+    "tags": ["Prototyping", "Interaction Design", "User Testing", "Design"],
+    "isPublished": true
+  },
+  {
+    "name": "Advanced CSS Styling",
+    "author": "Aliyu Usman",
+    "tags": ["CSS", "Advanced Styling", "Frontend Development", "Web Design"],
+    "isPublished": true
+  },
+  {
+    "name": "Usability Testing Basics",
+    "author": "Fatima Muhammad",
+    "tags": ["Usability Testing", "User Research", "UX Design", "Testing"],
+    "isPublished": true
+  },
+  {
+    "name": "Mobile App Development Bootcamp",
+    "author": "Raisal Aliyu",
+    "tags": ["Mobile Development", "App Design", "Programming", "Development"],
+    "isPublished": true
+  },
+  {
+    "name": "Design Thinking Workshop",
+    "author": "Aliyu Usman",
+    "tags": ["Design Thinking", "Innovation", "Problem Solving", "Design"],
+    "isPublished": true
+  },
+  {
+    "name": "Frontend Frameworks Explained",
+    "author": "Fatima Muhammad",
+    "tags": ["Frontend", "Frameworks", "JavaScript", "Web Development"],
+    "isPublished": true
+  },
+  {
+    "name": "Prototyping with Figma",
+    "author": "Raisal Aliyu",
+    "tags": ["Figma", "Prototyping", "Design Tools", "UI/UX"],
+    "isPublished": true
+  },
+  {
+    "name": "JavaScript for Designers",
+    "author": "Aliyu Usman",
+    "tags": ["JavaScript", "Designers", "Web Development", "Programming"],
+    "isPublished": true
+  },
+  {
+    "name": "Accessibility in Design",
+    "author": "Fatima Muhammad",
+    "tags": ["Accessibility", "Inclusive Design", "User Experience", "Design"],
+    "isPublished": true
+  },
+  {
+    "name": "Responsive Email Design",
+    "author": "Raisal Aliyu",
+    "tags": ["Email Design", "Responsive Design", "Web Development", "Design"],
+    "isPublished": true
+  },
+  {
+    "name": "UI/UX Design Principles",
+    "author": "Aliyu Usman",
+    "tags": ["UI", "UX", "Design Principles", "User Interface"],
+    "isPublished": true
+  },
+  {
+    "name": "CSS Grid Layout Mastery",
+    "author": "Fatima Muhammad",
+    "tags": ["CSS", "Grid Layout", "Frontend Development", "Web Design"],
+    "isPublished": true
+  },
+  {
+    "name": "App Wireframing Techniques",
+    "author": "Raisal Aliyu",
+    "tags": ["Wireframing", "App Design", "Prototyping", "UI/UX"],
+    "isPublished": true
+  },
+  {
+    "name": "Advanced Design Tools",
+    "author": "Aliyu Usman",
+    "tags": ["Design Tools", "Prototyping", "Graphic Design", "UI/UX"],
+    "isPublished": true
+  },
+  {
+    "name": "Web Accessibility Best Practices",
+    "author": "Fatima Muhammad",
+    "tags": [
+      "Web Accessibility",
+      "Inclusive Design",
+      "User Experience",
+      "Web Development"
+    ],
+    "isPublished": true
+  }
+]
