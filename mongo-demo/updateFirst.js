@@ -56,26 +56,32 @@ a valid operation.
 
 
 */
-
+//update document
 const updateCourse = async (id) => {
-  const course = await Course.findById(id);
-  if (!course) return;
+  const result = await Course.findByIdAndUpdate(
+    id,
+    {
+      $set: {
+        author: "Aliyu Al Turabi",
+        isPublished: false,
+      },
+    },
+    { new: true }
+  );
 
-  course.isPublished = true;
-  course.author = "Turabi Aliyu";
-
-//   course.set({
-//     isPublished: true,
-//     author: "Turabi Aiyu",
-//   });
-
-
-const result = await course.save()
-
-console.log(result)
+  console.log("This is it: \n", result);
 };
 
-updateCourse('65771860a206253324f93182');
+updateCourse("65771860a206253324f93176");
+const removeCourse = async (id) => {
+  const result = await Course.deleteOne({_id: id})
+
+  console.log(result)
+};
+
+removeCourse("65771860a206253324f93176");
+
+//remove document
 
 run();
 connect();
