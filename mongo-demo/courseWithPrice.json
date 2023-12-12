@@ -1,0 +1,167 @@
+[
+  {
+    "name": "Web Development Fundamentals",
+    "author": "Aliyu Usman",
+    "tags": ["HTML", "CSS", "JavaScript", "Web Development"],
+    "isPublished": true,
+    "price": 29.99,
+    "publishedDate": "2023-01-15"
+  },
+  {
+    "name": "User Experience Mastery",
+    "author": "Fatima Muhammad",
+    "tags": ["UX", "Usability", "User Research", "Design"],
+    "isPublished": true,
+    "price": 34.99,
+    "publishedDate": "2023-02-28"
+  },
+  {
+    "name": "Mobile App Design Workshop",
+    "author": "Raisal Aliyu",
+    "tags": ["UI", "Mobile Design", "Prototyping", "App Development"],
+    "isPublished": true,
+    "price": 39.99,
+    "publishedDate": "2023-03-20"
+  },
+  {
+    "name": "Responsive Web Design",
+    "author": "Aliyu Usman",
+    "tags": ["HTML", "CSS", "Responsive Design", "Web Development"],
+    "isPublished": true,
+    "price": 24.99,
+    "publishedDate": "2023-04-10"
+  },
+  {
+    "name": "Visual Design Principles",
+    "author": "Fatima Muhammad",
+    "tags": ["Visual Design", "Color Theory", "Typography", "Design"],
+    "isPublished": true,
+    "price": 29.99,
+    "publishedDate": "2023-05-05"
+  },
+  {
+    "name": "Interactive Prototyping Techniques",
+    "author": "Raisal Aliyu",
+    "tags": ["Prototyping", "Interaction Design", "User Testing", "Design"],
+    "isPublished": true,
+    "price": 19.99,
+    "publishedDate": "2023-06-15"
+  },
+  {
+    "name": "Advanced CSS Styling",
+    "author": "Aliyu Usman",
+    "tags": ["CSS", "Advanced Styling", "Frontend Development", "Web Design"],
+    "isPublished": true,
+    "price": 27.99,
+    "publishedDate": "2023-07-01"
+  },
+  {
+    "name": "Usability Testing Basics",
+    "author": "Fatima Muhammad",
+    "tags": ["Usability Testing", "User Research", "UX Design", "Testing"],
+    "isPublished": true,
+    "price": 22.99,
+    "publishedDate": "2023-08-22"
+  },
+  {
+    "name": "Mobile App Development Bootcamp",
+    "author": "Raisal Aliyu",
+    "tags": ["Mobile Development", "App Design", "Programming", "Development"],
+    "isPublished": true,
+    "price": 49.99,
+    "publishedDate": "2023-09-10"
+  },
+  {
+    "name": "Design Thinking Workshop",
+    "author": "Aliyu Usman",
+    "tags": ["Design Thinking", "Innovation", "Problem Solving", "Design"],
+    "isPublished": true,
+    "price": 29.99,
+    "publishedDate": "2023-10-05"
+  },
+  {
+    "name": "Frontend Frameworks Explained",
+    "author": "Fatima Muhammad",
+    "tags": ["Frontend", "Frameworks", "JavaScript", "Web Development"],
+    "isPublished": true,
+    "price": 24.99,
+    "publishedDate": "2023-11-15"
+  },
+  {
+    "name": "Prototyping with Figma",
+    "author": "Raisal Aliyu",
+    "tags": ["Figma", "Prototyping", "Design Tools", "UI/UX"],
+    "isPublished": true,
+    "price": 19.99,
+    "publishedDate": "2023-12-01"
+  },
+  {
+    "name": "JavaScript for Designers",
+    "author": "Aliyu Usman",
+    "tags": ["JavaScript", "Designers", "Web Development", "Programming"],
+    "isPublished": true,
+    "price": 29.99,
+    "publishedDate": "2024-01-15"
+  },
+  {
+    "name": "Accessibility in Design",
+    "author": "Fatima Muhammad",
+    "tags": ["Accessibility", "Inclusive Design", "User Experience", "Design"],
+    "isPublished": true,
+    "price": 22.99,
+    "publishedDate": "2024-02-28"
+  },
+  {
+    "name": "Responsive Email Design",
+    "author": "Raisal Aliyu",
+    "tags": ["Email Design", "Responsive Design", "Web Development", "Design"],
+    "isPublished": true,
+    "price": 17.99,
+    "publishedDate": "2024-03-20"
+  },
+  {
+    "name": "UI/UX Design Principles",
+    "author": "Aliyu Usman",
+    "tags": ["UI", "UX", "Design Principles", "User Interface"],
+    "isPublished": true,
+    "price": 24.99,
+    "publishedDate": "2024-04-10"
+  },
+  {
+    "name": "CSS Grid Layout Mastery",
+    "author": "Fatima Muhammad",
+    "tags": ["CSS", "Grid Layout", "Frontend Development", "Web Design"],
+    "isPublished": true,
+    "price": 27.99,
+    "publishedDate": "2024-05-05"
+  },
+  {
+    "name": "App Wireframing Techniques",
+    "author": "Raisal Aliyu",
+    "tags": ["Wireframing", "App Design", "Prototyping", "UI/UX"],
+    "isPublished": true,
+    "price": 19.99,
+    "publishedDate": "2024-06-15"
+  },
+  {
+    "name": "Advanced Design Tools",
+    "author": "Aliyu Usman",
+    "tags": ["Design Tools", "Prototyping", "Graphic Design", "UI/UX"],
+    "isPublished": true,
+    "price": 29.99,
+    "publishedDate": "2024-07-01"
+  },
+  {
+    "name": "Web Accessibility Best Practices",
+    "author": "Fatima Muhammad",
+    "tags": [
+      "Web Accessibility",
+      "Inclusive Design",
+      "User Experience",
+      "Web Development"
+    ],
+    "isPublished": true,
+    "price": 22.99,
+    "publishedDate": "2024-08-22"
+  }
+]
